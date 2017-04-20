@@ -2,11 +2,26 @@
   "name": "365-coding-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "www/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": [
+    {
+      "name": "Erik Vanderlei Fernandes",
+      "email": "erik.vanderlei.programador@outlook.com"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "handlebars": "^4.0.6",
+    "mongoose": "^4.9.5"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "supertest": "^3.0.0"
+  }
 }
