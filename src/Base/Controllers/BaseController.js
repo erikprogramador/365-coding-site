@@ -2,7 +2,7 @@ class BaseController {
   constructor () {}
 
   index (request, response) {
-    response.send('Now is from controller')
+    response.render('index')
   }
 }
 
