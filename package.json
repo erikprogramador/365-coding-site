@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node www/index.js",
     "dev": "nodemon www/index.js",
-    "test": "ava"
+    "test": "ava",
+    "front-dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "keywords": [],
   "author": [
@@ -20,10 +24,13 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "hbs": "^4.0.1",
-    "mongoose": "^4.9.5"
+    "mongoose": "^4.9.5",
+    "vue-material": "^0.7.1"
   },
   "devDependencies": {
     "ava": "^0.19.1",
+    "laravel-mix": "^0.11.3",
+    "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
   }
