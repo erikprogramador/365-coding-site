@@ -27,7 +27,7 @@
   export default {
     components: { SideLinks },
     methods: {
-      toggleLeftSidenav() {
+      toggleLeftSidenav () {
         this.$refs.leftSidenav.toggle();
       }
     }

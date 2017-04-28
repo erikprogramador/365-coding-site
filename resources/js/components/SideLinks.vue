@@ -1,21 +1,21 @@
 <template>
   <md-list>
     <md-list-item>
-    <router-link to="home">
+    <router-link :to="{ name: 'home' }" exact>
         <md-ink-ripple />
         <md-icon>home</md-icon> <span>Home</span>
       </router-link>
     </md-list-item>
 
     <md-list-item>
-      <router-link to="about">
+      <router-link :to="{ name: 'about', exact }">
         <md-ink-ripple />
         <md-icon>info</md-icon> <span>About</span>
       </router-link>
     </md-list-item>
 
     <md-list-item>
-      <router-link to="contact">
+      <router-link :to="{ name: 'contact' }">
         <md-ink-ripple />
         <md-icon>contact_mail</md-icon> <span>Contact</span>
       </router-link>
