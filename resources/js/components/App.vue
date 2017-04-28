@@ -1,8 +1,8 @@
 <template>
   <side-nav>
-    <main>
-      Content from here
-    </main>
+    <md-layout>
+        <router-view />
+    </md-layout>
   </side-nav>
 </template>
 

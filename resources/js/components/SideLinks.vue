@@ -1,18 +1,24 @@
 <template>
   <md-list>
     <md-list-item>
-      <md-ink-ripple />
-      <md-icon>home</md-icon> <span>Home</span>
+    <router-link to="home">
+        <md-ink-ripple />
+        <md-icon>home</md-icon> <span>Home</span>
+      </router-link>
     </md-list-item>
 
     <md-list-item>
-      <md-ink-ripple />
-      <md-icon>info</md-icon> <span>About</span>
+      <router-link to="about">
+        <md-ink-ripple />
+        <md-icon>info</md-icon> <span>About</span>
+      </router-link>
     </md-list-item>
 
     <md-list-item>
-      <md-ink-ripple />
-      <md-icon>contact_mail</md-icon> <span>Contact</span>
+      <router-link to="contact">
+        <md-ink-ripple />
+        <md-icon>contact_mail</md-icon> <span>Contact</span>
+      </router-link>
     </md-list-item>
   </md-list>
 </template>

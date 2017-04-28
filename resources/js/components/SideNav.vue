@@ -10,14 +10,14 @@
 
     <slot></slot>
 
-    <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
+    <md-sidenav class="md-left" ref="leftSidenav">
       <md-toolbar class="md-large">
         <div class="md-toolbar-container">
           <h3 class="md-title">365 Days of Code</h3>
         </div>
       </md-toolbar>
 
-      <side-links />
+      <side-links/>
     </md-sidenav>
   </div>
 </template>
